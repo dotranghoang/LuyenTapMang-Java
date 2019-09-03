@@ -7,20 +7,20 @@ import java.util.Scanner;
 
 public class LuyenTapMang {
     public static void main(String[] args) {
-        ArrayX();
+        RunningX();
     }
 
-//    private static void RunningX() {
-//        try {
-//            ArrayX();
-//        } catch (InputMismatchException e ) {
-//            System.out.println("Lỗi kiểu dữ liệu. Thử lại");
-//             RunningX();
-//        } catch (Exception e) {
-//            System.out.println("Có lỗi xảy ra thử lại:");
-//            RunningX();
-//        }
-//    }
+    private static void RunningX() {
+        try {
+            ArrayX();
+        } catch (InputMismatchException e ) {
+            System.out.println("Lỗi kiểu dữ liệu. Thử lại");
+             RunningX();
+        } catch (Exception e) {
+            System.out.println("Có lỗi xảy ra thử lại:");
+            RunningX();
+        }
+    }
 
     private static void ArrayX() {
         Scanner scanner = new Scanner(System.in);
